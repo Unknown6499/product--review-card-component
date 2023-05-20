@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* resize: both; */
 }
 
 .main {
@@ -11,9 +12,8 @@
   position: relative;
 }
 .center {
-  height: 70vh;
-  width: 70vw;
-
+  height: 50vh;
+  width: 50vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -21,60 +21,62 @@
   display: flex;
   flex-direction: row;
   background-color: white;
-  border-radius: 1.25rem;
+  border-radius: 0.5rem;
   box-shadow: 0.125rem 0.125rem hsl (30, 38%, 92%);
 }
 .image img {
   height: 100%;
-  border-radius: 1.25rem 0 0 1.25rem;
+  border-radius: 0.5rem 0 0 0.5rem;
 }
 
 .content {
-  padding-left: 2rem;
-  /* height: 10%; */
-  width: 50%;
+  padding-left: 1rem;
+  height: 50vh;
+  width: 50vw;
   overflow: hidden;
 }
 .content .para {
   color: hsl(158, 36%, 37%);
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   font-family: "Montserrat";
-  margin: 1.8rem;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+  margin: 1rem;
+}
+.spacing {
+  letter-spacing: 3px;
 }
 .darkh1 {
   color: black;
   font-family: "Fraunces";
-  margin-left: 1.8rem;
+  margin-left: 1rem;
+  font-size: 1.5rem;
 }
 .button {
+  display: inline-block;
   background-color: hsl(158, 36%, 37%);
-  width: 18rem;
-  height: 5rem;
+  width: 14rem;
+  height: 2.5rem;
   border: none;
-  border-radius: 20px;
-  margin-left: 10%;
+  border-radius: 4px;
+  margin-left: 5%;
   cursor: pointer;
 }
 .button:hover {
-  background-color: hsl(228, 12%, 48%);
+  background-color: hsl(158, 36%, 22%);
 }
 .button p {
-  display: inline;
-  padding: 0;
+  display: inline-block;
   color: white;
-  font-size: 2rem;
+  font-size: 0.875rem;
 }
 .button img {
-  display: inline;
-  width: 2rem;
+  display: inline-block;
+  width: 0.875;
 }
 
 .bold_text {
   color: hsl(158, 36%, 37%);
   font-family: "Fraunces";
-  margin: 1, 8rem;
+  margin: 1rem;
   font-weight: 700;
   font-size: 1.8rem;
 }
@@ -89,28 +91,60 @@
   }
 
   .mobile {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
+    display: grid;
     height: 100vh;
     width: 100vw;
     background-color: hsl(30, 38%, 92%);
   }
   .container {
-    height: 100vh;
-    width: 100vw;
-    border-radius: 0.8rem;
+    height: 95vh;
+    width: 90vw;
+    margin: auto;
+    border-radius: 0.5rem;
     background-color: white;
-    border: 1px solid black;
+
+    overflow: hidden;
   }
   .container img {
-    width: 18rem;
-    border-radius: 0.8rem 0.8rem 0 0;
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  .content_mobile {
+    width: 100%;
+  }
+
+  .content_mobile .mobile_paragraph {
+    color: hsl(158, 36%, 37%);
+    font-size: 1rem;
+    font-family: "Montserrat";
+  }
+  .content_mobile h1 {
+    color: black;
+    font-family: "Fraunces";
+  }
+  .dark_price {
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces";
+    margin: 1, 8rem;
+    font-weight: 700;
+    font-size: 1.8rem;
   }
   .button_mob {
     background-color: hsl(158, 36%, 37%);
+    border: none;
+    font-family: "Montserrat";
+    color: white;
+    width: 80%;
+    margin: 7%;
+    border-radius: 0.5rem;
+    padding: 10px;
   }
+  .button_mob p {
+    display: inline-block;
+  }
+
   .button_mob img {
-    width: 0.8rem;
+    width: 1rem;
+    display: inline;
   }
 }
